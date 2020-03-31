@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+	<title>Insert title here</title>
+</head> 
+	<body>
+		<h1>Login</h1>
+		
+		<form action="#" th:action="@{/validacion}" th:object="${usuario}" method="post">
+			<p>
+				Nombre: <input type="text" th:field="*{nombre}">
+			</p> 
+			<p>
+				Contra: <input type="password" th:field="*{contra}">
+			</p> 
+			<p>
+				<input type="submit" value="Enviar"/> <input type="reset" value="Borrar">
+			</p>
+		</form> 
+	</body> 
+</html>
